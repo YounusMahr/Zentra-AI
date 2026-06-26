@@ -58,7 +58,7 @@ export default function Projects() {
         <div className="glow-orb orb-1"></div>
         <div className="container text-center">
           <span className="section-subtitle">Case Studies</span>
-          <h1 className="subpage-title">Our Engineered <span class="text-gradient">Products</span></h1>
+          <h1 className="subpage-title">Our Engineered <span className="text-gradient">Products</span></h1>
           <p className="subpage-description">An open look at the custom applications and automated cloud environments we have deployed for our clients.</p>
         </div>
       </section>
