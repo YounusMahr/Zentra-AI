@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & FAQ | Zentra AI</title>
+    <meta name="description" content="Reach out to Zentra AI to schedule a technical consultation, or browse our frequently asked questions.">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" id="nav-logo">
+                <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+                <span class="logo-text">ZENTRA <span class="accent">AI</span></span>
+            </a>
+            
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-auth-container" id="nav-auth-container">
+                <a href="login.html" class="btn btn-secondary nav-login-btn" id="nav-login-btn">Sign In</a>
+                <a href="contact.html" class="btn btn-primary" id="header-cta-btn">Consult Today</a>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <ul class="drawer-links">
+            <li><a href="index.html" class="drawer-link">Home</a></li>
+            <li><a href="services.html" class="drawer-link">Services</a></li>
+            <li><a href="projects.html" class="drawer-link">Projects</a></li>
+            <li><a href="about.html" class="drawer-link">About Us</a></li>
+            <li><a href="contact.html" class="drawer-link">Contact</a></li>
+        </ul>
+        <div class="drawer-cta" id="drawer-auth-container">
+            <a href="login.html" class="btn btn-secondary btn-full mb-10" id="drawer-login-btn">Sign In</a>
+            <a href="contact.html" class="btn btn-primary btn-full">Consult Today</a>
+        </div>
+    </div>
+
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+        <div class="glow-orb orb-3"></div>
+        <div class="container text-center">
+            <span class="section-subtitle">Let's Connect</span>
+            <h1 class="subpage-title">Contact & <span class="text-gradient">Inquiries</span></h1>
+            <p class="subpage-description">Ready to build or migrate? Get in touch with our solutions engineer or find answers in our client FAQ.</p>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact-section" style="padding-top: 40px;">
+        <div class="container contact-grid">
+            <div class="contact-info reveal active">
+                <h2 class="sub-title">Schedule a Consultation</h2>
+                <p class="contact-desc">
+                    Detail your web application, mobile app, or cloud engineering requirements. An architecture specialist will evaluate your request and follow up.
+                </p>
+                
+                <div class="contact-details">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-content">
+                            <span>Email Us</span>
+                            <a href="mailto:hello@zentra.ai">hello@zentra.ai</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-content">
+                            <span>HQ Location</span>
+                            <p>100 Silicon Boulevard, San Francisco, CA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-content">
+                            <span>Direct Line</span>
+                            <p>+1 (800) 555-ZENTRA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links-container">
+                    <span>Channels:</span>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper reveal active">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Business Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Required Service</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select a Service</option>
+                            <option value="web">Web Application Development</option>
+                            <option value="app">Mobile Application Engineering</option>
+                            <option value="devops">DevOps & Cloud Automation</option>
+                            <option value="full">Full Lifecycle Suite</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Project Blueprint</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your product goals, cloud challenges, or scaling bottlenecks..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
+                    </button>
+                    
+                    <div class="form-feedback" id="form-feedback"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Common Queries</span>
+                <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+            </div>
+
+            <div class="faq-accordion-wrapper">
+                <!-- Accordion Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is your typical development timeline for custom web apps?</span>
+                        <span class="faq-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For standard SaaS portals and custom web applications, initial production blueprints and high-fidelity clickable prototypes take 2–3 weeks. Iterative coding, database schema setups, and deployment typically span 8–12 weeks depending on integration complexity.</p>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you provide infrastructure provisioning alongside mobile apps?</span>
+                        <span class="faq-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Every mobile application we design is configured to connect to auto-scaling containerized cloud backends. Our DevOps team provisions your database layer, security groups, API load balancers, and monitoring tools by default.</p>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does Zentra AI handle continuous security and cloud cost tracking?</span>
+                        <span class="faq-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We build using Terraform configuration blueprints, allowing us to implement cloud cost-controls and alerts. For security, we configure isolated Virtual Private Clouds (VPCs), establish Web Application Firewalls (WAF), and automate SSL certificate renewals.</p>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can we migrate our legacy applications to Kubernetes?</span>
+                        <span class="faq-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We specialize in legacy application migration. Our DevOps architects wrap your legacy applications into Docker images, audit dependency libraries, write Kubernetes manifest patterns, and execute zero-downtime DNS cutovers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+                    <span class="logo-text">ZENTRA <span class="accent">AI</span></span>
+                </a>
+                <p class="footer-about-text">
+                    Engineering custom high-speed applications, user interfaces, and automated cloud pipelines for high-growth enterprises worldwide.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">Web Engineering</a></li>
+                    <li><a href="services.html">Mobile Applications</a></li>
+                    <li><a href="services.html">Cloud & DevOps</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us & Team</a></li>
+                    <li><a href="projects.html">Our Portfolio</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Insights & Telemetry</h4>
+                <p>Subscribe to receive tech blueprints and DevOps guides weekly.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="email@company.com" required aria-label="Email address">
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                </form>
+                <span class="newsletter-msg" id="newsletter-msg"></span>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Zentra AI. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

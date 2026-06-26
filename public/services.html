@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Zentra AI</title>
+    <meta name="description" content="In-depth overview of our Web, Mobile, and DevOps services. Explore our technical capabilities and stacks.">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" id="nav-logo">
+                <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+                <span class="logo-text">ZENTRA <span class="accent">AI</span></span>
+            </a>
+            
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link active">Services</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-auth-container" id="nav-auth-container">
+                <a href="login.html" class="btn btn-secondary nav-login-btn" id="nav-login-btn">Sign In</a>
+                <a href="contact.html" class="btn btn-primary" id="header-cta-btn">Consult Today</a>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <ul class="drawer-links">
+            <li><a href="index.html" class="drawer-link">Home</a></li>
+            <li><a href="services.html" class="drawer-link">Services</a></li>
+            <li><a href="projects.html" class="drawer-link">Projects</a></li>
+            <li><a href="about.html" class="drawer-link">About Us</a></li>
+            <li><a href="contact.html" class="drawer-link">Contact</a></li>
+        </ul>
+        <div class="drawer-cta" id="drawer-auth-container">
+            <a href="login.html" class="btn btn-secondary btn-full mb-10" id="drawer-login-btn">Sign In</a>
+            <a href="contact.html" class="btn btn-primary btn-full">Consult Today</a>
+        </div>
+    </div>
+
+    <!-- Subpage Banner -->
+    <section class="subpage-hero">
+        <div class="glow-orb orb-2"></div>
+        <div class="container text-center">
+            <span class="section-subtitle">Our Capabilities</span>
+            <h1 class="subpage-title">Digital Engineering <span class="text-gradient">Services</span></h1>
+            <p class="subpage-description">We build, automate, and scale. Detailed exploration of our technical frameworks and execution models.</p>
+        </div>
+    </section>
+
+    <!-- In-depth Services List -->
+    <section class="services-detail-list-section">
+        <div class="container">
+            
+            <!-- Service 1: Web Systems -->
+            <div class="service-detail-item reveal">
+                <div class="service-detail-content">
+                    <div class="service-detail-icon"><i class="fa-solid fa-code"></i></div>
+                    <h2 class="service-detail-title">Enterprise Web Engineering</h2>
+                    <p class="service-detail-p">
+                        We build highly scalable SaaS systems, client portals, and web architectures that load instantly. By utilizing Server-Side Rendering (SSR) and Incremental Static Regeneration (ISR), we ensure maximum search engine discoverability (SEO Core Web Vitals) alongside robust dashboard interactions.
+                    </p>
+                    <div class="service-detail-tech">
+                        <h4>Technologies & Standards:</h4>
+                        <div class="tech-labels">
+                            <span>NextJS</span>
+                            <span>React</span>
+                            <span>GraphQL</span>
+                            <span>NodeJS</span>
+                            <span>TypeScript</span>
+                            <span>TailwindCSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-detail-image-wrapper">
+                    <img src="assets/service_web.png" alt="Web Engineering Screen Preview" class="service-detail-image">
+                </div>
+            </div>
+
+            <!-- Service 2: Mobile Apps -->
+            <div class="service-detail-item reveal reverse">
+                <div class="service-detail-content">
+                    <div class="service-detail-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h2 class="service-detail-title">High-Fidelity Mobile Apps</h2>
+                    <p class="service-detail-p">
+                        Our mobile development team constructs native iOS (Swift) and Android (Kotlin) software, alongside high-performance cross-platform Flutter/React Native codebases. We integrate biometric auth, secure keychain storage, and offline state replication workflows to deliver sleek user utility.
+                    </p>
+                    <div class="service-detail-tech">
+                        <h4>Technologies & Standards:</h4>
+                        <div class="tech-labels">
+                            <span>Flutter</span>
+                            <span>React Native</span>
+                            <span>Swift / iOS</span>
+                            <span>Kotlin / Android</span>
+                            <span>WebSockets</span>
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-detail-image-wrapper">
+                    <img src="assets/service_app.png" alt="Mobile App Screen Preview" class="service-detail-image">
+                </div>
+            </div>
+
+            <!-- Service 3: DevOps & Cloud -->
+            <div class="service-detail-item reveal">
+                <div class="service-detail-content">
+                    <div class="service-detail-icon"><i class="fa-solid fa-server"></i></div>
+                    <h2 class="service-detail-title">DevOps & Cloud Automation</h2>
+                    <p class="service-detail-p">
+                        We configure automated, secure, and auto-scaling cloud deployments. By modeling setups as code (Terraform), we configure zero-downtime rolling upgrades on Kubernetes clusters, monitor system memory telemetry (Prometheus/Grafana), and set automated defense firewall barriers.
+                    </p>
+                    <div class="service-detail-tech">
+                        <h4>Technologies & Standards:</h4>
+                        <div class="tech-labels">
+                            <span>Kubernetes</span>
+                            <span>Docker</span>
+                            <span>Terraform</span>
+                            <span>AWS / GCP</span>
+                            <span>GitHub Actions</span>
+                            <span>Prometheus</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-detail-image-wrapper">
+                    <img src="assets/service_devops.png" alt="DevOps Server Infrastructure" class="service-detail-image">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner-section">
+        <div class="glow-orb orb-3"></div>
+        <div class="container text-center">
+            <h2 class="cta-title">Ready to Construct Your Digital Platform?</h2>
+            <p class="cta-desc">Work with Zentra AI's specialized engineers to design, build, and deploy your software blueprint.</p>
+            <a href="contact.html" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book Technical Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+                    <span class="logo-text">ZENTRA <span class="accent">AI</span></span>
+                </a>
+                <p class="footer-about-text">
+                    Engineering custom high-speed applications, user interfaces, and automated cloud pipelines for high-growth enterprises worldwide.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">Web Engineering</a></li>
+                    <li><a href="services.html">Mobile Applications</a></li>
+                    <li><a href="services.html">Cloud & DevOps</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us & Team</a></li>
+                    <li><a href="projects.html">Our Portfolio</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Insights & Telemetry</h4>
+                <p>Subscribe to receive tech blueprints and DevOps guides weekly.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="email@company.com" required aria-label="Email address">
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                </form>
+                <span class="newsletter-msg" id="newsletter-msg"></span>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Zentra AI. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
