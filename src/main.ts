@@ -1,14 +1,36 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import { ExpressAdapter } from '@nestjs/platform-express';
+import * as express from 'express';
 
-async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  
-  // Enable CORS just in case
+const server = express();
+
+export async function bootstrap() {
+  const app = await NestFactory.create(
+    AppModule,
+    new ExpressAdapter(server)
+  );
   app.enableCors();
-  
-  const port = process.env.PORT || 8080;
-  await app.listen(port);
-  console.log(`Zentra AI application running on: http://localhost:${port}`);
+  await app.init();
+  return server;
 }
-bootstrap();
+
+// Local development bootstrap
+if (process.env.NODE_ENV !== 'production') {
+  const port = process.env.PORT || 8080;
+  NestFactory.create(AppModule).then(async (app) => {
+    app.enableCors();
+    await app.listen(port);
+    console.log(`Local NestJS application running on: http://localhost:${port}`);
+  });
+}
+
+// Vercel serverless entrypoint handler
+let cachedHandler: any;
+export default async (req: any, res: any) => {
+  if (!cachedHandler) {
+    await bootstrap();
+    cachedHandler = server;
+  }
+  return cachedHandler(req, res);
+};

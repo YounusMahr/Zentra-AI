@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/main.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/public/assets/$1"
+    },
+    {
+      "src": "/(.*).(css|js|html|png|ico|svg)",
+      "dest": "/public/$1.$2"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "src/main.ts"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "src/main.ts"
+    }
+  ]
+}
