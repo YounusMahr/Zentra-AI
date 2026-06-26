@@ -1,9 +1,17 @@
+# Next.js build output, export and cache files
+/.next/
+/out/
+/build
+.vercel
+*.tsbuildinfo
+
 # Compiled output
 /dist
 /node_modules
 
 # Environment variables (security sensitive)
 .env
+.env*.local
 .env.production
 .env.local
 .env.development
